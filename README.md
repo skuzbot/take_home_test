@@ -37,7 +37,7 @@ If we look at this 7 x 7 stack
 | 2| **5**| 9|14|20|27|  
 | **1**| 3| 6|10|15|21|28|
 
-We can see the emerging pattern 5, 13, 25, 41, 61... which is the [Centered square numbers sequence](https://oeis.org/A001844).
+Whenever x = y we can see the emerging pattern 5, 13, 25, 41, 61... which is the [Centered square numbers sequence](https://oeis.org/A001844).
 
 The formula for this sequence is `a(n) = 2*n^2 + 2*n + 1 = n^2 + (n+1)^2`
 
@@ -45,3 +45,5 @@ If n = 99999 (taking 1 away from 100000 since A001844 starts at 5) we get 199980
 
 I'm confident this is the correct answer and have adjusted my tests to reflect that. If I'm wrong I apologize and would love to know where I went wrong.
 ___
+
+Thanks for reviewing this challenge. I hope it displays my ability to code in Javascript as well as my ability to pick up a new language like Elixir very quickly. Previously to this I had never written anything in Elixir but I really enjoyed it!
