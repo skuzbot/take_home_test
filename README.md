@@ -1,5 +1,10 @@
 # take_home_test
 Take home coding challenge for [redacted]
+___
+I first solved this algorithm in Javascript with minimal manual testing. That file can be found at `Javascript/takeHomeCodeChallenge.js`
+
+Next I refactored my logic to Elixir and wrote tests reflecting the initial problem prompt. The answer function is in `Elixir/lib/takehome.ex`  
+To run the tests use `mix test` from the Elixir directory.
 
 
 ___
