@@ -1,6 +1,8 @@
 # take_home_test
 Take home coding challenge for [redacted]
 
+
+___
 ### Note on given tests
 In the prompt it stated that the answer for inputs [100000, 100000] should be 20000000001.
 I have a suspicion that this may be a typo.
@@ -23,4 +25,4 @@ The formula for this sequence is `a(n) = 2*n^2 + 2*n + 1 = n^2 + (n+1)^2`
 If n = 99999 (taking 1 away from 100000 since A001844 starts at 5) we get 199980001.
 
 I'm confident this is the correct answer and have adjusted my tests to reflect that. If I'm wrong I apologize and would love to know where I went wrong.
-
+___
