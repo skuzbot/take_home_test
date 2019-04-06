@@ -25,12 +25,12 @@ Examples/Edge Cases:
 Keep in mind indices are not zero based
 
 */
-//helper function
+
 
 // -Start of Code-                                                 ===
 
 const answer = (x, y) => {
-
+  // checkout commit dcde044 to see my recursive solution
   const traverseRows = (curCell, curRow) => {
     while (curRow < y) {
       curRow++;
