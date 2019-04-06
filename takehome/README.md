@@ -1,21 +1,5 @@
 # Takehome
 
-**TODO: Add description**
+**Take home coding challenge for a company that shall remain unnamed as per their request in the propmt**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `takehome` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:takehome, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/takehome](https://hexdocs.pm/takehome).
-
+## Getting Started
