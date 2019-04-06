@@ -30,24 +30,7 @@ Keep in mind indices are not zero based
 // -Start of Code-                                                 ===
 
 const answer = (x, y) => {
-  //we'll start at 1, 1 in our pyramid. it has the box id of 1.
-  // let currentCell = 1;
-  // let currentRow = 1;
-  // let currentColumn = 1;
 
-  //I'll leave these commented out for now but in order to overcome max call stack in javascript I'm going to refactor these to be while loops.
-  //I know that's not functional programming but I just want to see if I can make it work.
-  // const traverseRows = (curCell, curRow, maxRow) => {
-  //   if (curRow < maxRow) {
-  //     curRow++;
-  //     curCell = curCell + (curRow - 1);
-  //     let result = traverseRows(curCell, curRow, maxRow);
-  //     return result;
-  //   } else {
-  //     return curCell;
-  //   }
-  // }
-  
   const traverseRows = (curCell, curRow) => {
     while (curRow < y) {
       curRow++;
@@ -55,24 +38,6 @@ const answer = (x, y) => {
     }
     return curCell;
   }
-
-  //this function will give us the value of whatever is in column 1 on y's row.
-  let colOneAtRowY = traverseRows(1, 1);
-
-  //to get the next box id in column 2 we will take y + 1 and add it to the box id we just found
-  const colIncreaseInit = y + 1;
-
-  //Same as traverse rows i'm going to refactor this to be a while loop
-  // const traverseColumns = (curCell, curCol, maxCol, incAmount) => {
-  //   if (curCol < maxCol) {
-  //     const nextColCell = curCell + incAmount;
-  //     incAmount++;
-  //     curCol++;
-  //     return traverseColumns(nextColCell, curCol, maxCol, incAmount)
-  //   } else {
-  //     return curCell;
-  //   }
-  // }
 
   const traverseColumns = (curCell, curCol, incAmount) => {
     while (curCol < x) {
@@ -83,19 +48,22 @@ const answer = (x, y) => {
     return curCell;
   }
 
-  let output = traverseColumns(colOneAtRowY, 1, colIncreaseInit);
-  return '' + output;
+  //this function will give us the value of whatever is in column 1 on y's row.
+  const colOneAtRowY = traverseRows(1, 1);
+
+  //this will return a stringified version of the x and y coordinate
+  return '' + traverseColumns(colOneAtRowY, 1, y + 1);
 }
 
 // -End of Code-                                                   ===
 
 // given tests:
 
-console.log(answer(2, 2), ' is equal to expected 5', answer(2, 2) === '5');
-console.log(answer(3, 3), ' is equal to expected 13', answer(3, 3) === '13');
-console.log(answer(2, 4), ' is equal to expected 12', answer(2, 4) === '12');
-console.log(answer(4, 1), ' is equal to expected 10', answer(4, 1) === '10');
-console.log(answer(4, 2), ' is equal to expected 14', answer(4, 2) === '14');
-console.log(answer(4, 5), ' is equal to expected 32', answer(4, 5) === '32');
-console.log(answer(5, 3), ' is equal to expected 26', answer(5, 3) === '26');
-console.log(answer(100001, 100000), ' is equal to expected 20000000001', answer(100001, 100000) === '20000000001');
+console.log(answer(2, 2), ' is expected to equal 5', answer(2, 2) === '5');
+console.log(answer(3, 3), ' is expected to equal 13', answer(3, 3) === '13');
+console.log(answer(2, 4), ' is expected to equal 12', answer(2, 4) === '12');
+console.log(answer(4, 1), ' is expected to equal 10', answer(4, 1) === '10');
+console.log(answer(4, 2), ' is expected to equal 14', answer(4, 2) === '14');
+console.log(answer(4, 5), ' is expected to equal 32', answer(4, 5) === '32');
+console.log(answer(5, 3), ' is expected to equal 26', answer(5, 3) === '26');
+console.log(answer(100001, 100000), ' is expected to equal  20000000001', answer(100001, 100000) === '20000000001');
