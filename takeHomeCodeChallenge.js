@@ -31,9 +31,9 @@ Keep in mind indices are not zero based
 
 const answer = (x, y) => {
   //we'll start at 1, 1 in our pyramid. it has the box id of 1.
-  let currentCell = 1;
-  let currentRow = 1;
-  let currentColumn = 1;
+  // let currentCell = 1;
+  // let currentRow = 1;
+  // let currentColumn = 1;
 
   //I'll leave these commented out for now but in order to overcome max call stack in javascript I'm going to refactor these to be while loops.
   //I know that's not functional programming but I just want to see if I can make it work.
@@ -48,17 +48,16 @@ const answer = (x, y) => {
   //   }
   // }
   
-  const traverseRows = (curCell, curRow, maxRow) => {
-    while (curRow < maxRow) {
+  const traverseRows = (curCell, curRow) => {
+    while (curRow < y) {
       curRow++;
       curCell = curCell + (curRow - 1);
     }
-     console.log('curCell :', curCell);
     return curCell;
   }
 
   //this function will give us the value of whatever is in column 1 on y's row.
-  let colOneAtRow = traverseRows(currentCell, currentRow, y);
+  let colOneAtRowY = traverseRows(1, 1);
 
   //to get the next box id in column 2 we will take y + 1 and add it to the box id we just found
   const colIncreaseInit = y + 1;
@@ -75,8 +74,8 @@ const answer = (x, y) => {
   //   }
   // }
 
-  const traverseColumns = (curCell, curCol, maxCol, incAmount) => {
-    while (curCol < maxCol) {
+  const traverseColumns = (curCell, curCol, incAmount) => {
+    while (curCol < x) {
       curCell += incAmount;
       incAmount++;
       curCol++;
@@ -84,7 +83,7 @@ const answer = (x, y) => {
     return curCell;
   }
 
-  let output = traverseColumns(colOneAtRow, currentColumn, x, colIncreaseInit);
+  let output = traverseColumns(colOneAtRowY, 1, colIncreaseInit);
   return '' + output;
 }
 
@@ -92,10 +91,11 @@ const answer = (x, y) => {
 
 // given tests:
 
-console.log(answer(3, 3), ' is equal to expected 13');
-// console.log(answer(2, 2), ' is equal to expected 5');
-// console.log(answer(2, 4), ' is equal to expected 12');
-// console.log(answer(4, 1), ' is equal to expected 10');
-// console.log(answer(4, 2), ' is equal to expected 14');
-console.log(answer(10, 10),' is equal to expected ?');
-console.log(answer(100, 100),' is equal to expected ?');
+console.log(answer(2, 2), ' is equal to expected 5', answer(2, 2) === '5');
+console.log(answer(3, 3), ' is equal to expected 13', answer(3, 3) === '13');
+console.log(answer(2, 4), ' is equal to expected 12', answer(2, 4) === '12');
+console.log(answer(4, 1), ' is equal to expected 10', answer(4, 1) === '10');
+console.log(answer(4, 2), ' is equal to expected 14', answer(4, 2) === '14');
+console.log(answer(4, 5), ' is equal to expected 32', answer(4, 5) === '32');
+console.log(answer(5, 3), ' is equal to expected 26', answer(5, 3) === '26');
+console.log(answer(100001, 100000), ' is equal to expected 20000000001', answer(100001, 100000) === '20000000001');
