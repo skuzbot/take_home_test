@@ -2,7 +2,7 @@
 Take home coding challenge for [redacted]
 
 ### Note on given tests
-In the propmt it stated that the answer for inputs [100000, 100000] should be 20000000001.
+In the prompt it stated that the answer for inputs [100000, 100000] should be 20000000001.
 I have a suspicion that this may be a typo.
 Here's my thinking...
 
