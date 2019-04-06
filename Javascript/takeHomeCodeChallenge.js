@@ -1,16 +1,4 @@
 /*
-Approach:
-This will ultimately be solved with functional programing via the elixir code language so I will approach this problem with that mindset.
-I think this problem can be solved mathematically considering the row and column sequences increase with a set pattern.
-
-My first concern will be to calculate what the first column's value is for whichever row we are looking at
-That figure can be calculated by adding the next row's index minus 1 to the current cell value. 
-
-Iterating into the row will be done by taking the column 1's value at row y and adding the y index + 1 to get the next column's value. After that
-initial increase value is found we will add one to it and increase again until our target column is found.
-
-Essentially where N is x cord and M is y cord, i will iterate up with an increasing sequence until i reach the value M, then add one and continue.
-
 Output:
 string representing the box id for the given x and y cordinates
 
@@ -23,12 +11,9 @@ return value must be a string representing the box id int
 
 Examples/Edge Cases:
 Keep in mind indices are not zero based
-
 */
 
-
 // -Start of Code-                                                 ===
-
 const answer = (x, y) => {
   // checkout commit dcde044 to see my recursive solution
   const traverseRows = (curCell, curRow) => {
