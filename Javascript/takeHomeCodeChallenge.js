@@ -66,4 +66,4 @@ console.log(answer(4, 1), ' is expected to equal 10', answer(4, 1) === '10');
 console.log(answer(4, 2), ' is expected to equal 14', answer(4, 2) === '14');
 console.log(answer(4, 5), ' is expected to equal 32', answer(4, 5) === '32');
 console.log(answer(5, 3), ' is expected to equal 26', answer(5, 3) === '26');
-console.log(answer(100001, 100000), ' is expected to equal  20000000001', answer(100001, 100000) === '20000000001');
+console.log(answer(100000, 100000), ' is expected to equal  199980001', answer(100000, 100000) === '19999800001');

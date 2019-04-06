@@ -11,7 +11,5 @@ defmodule Takehome do
     Integer.to_charlist(Takehome.Traverse.traverseCol(colOneAtRowY, 1, x, incAmt))
   end
   
-
-
 end
 

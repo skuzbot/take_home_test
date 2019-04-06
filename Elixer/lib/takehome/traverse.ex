@@ -1,6 +1,6 @@
 defmodule Takehome.Traverse do
   
-  def traverseRows(curCell, curRow, maxRow) when curRow ==maxRow, do: curCell
+  def traverseRows(curCell, curRow, maxRow) when curRow == maxRow, do: curCell
 
   def traverseRows(curCell, curRow, maxRow) do
     nextRow = curRow + 1
