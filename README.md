@@ -1,5 +1,5 @@
 # take_home_test
-Take home coding challenge for [redacted]
+## Take home coding challenge for [redacted]
 ___
 I first solved this algorithm in Javascript with minimal manual testing. That file can be found at `Javascript/takeHomeCodeChallenge.js`
 
