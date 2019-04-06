@@ -14,8 +14,12 @@ I decided this problem can be quickly solved mathematically considering the row 
 My first concern was be to calculate what the first column's value is for whichever row we are looking at
 That figure can be calculated by adding the next row's index minus 1 to the current cell value. 
 
-Iterating into the row will be done by taking the column 1's value at row y and adding the y index + 1 to get the next column's value. After that
-initial increase value is found we will add one to it and increase again until our target column is found.
+Iterating into the row was be done by taking the column 1's value at row y and adding the y index + 1 to get the next column's value. After that I took the previous increase + 1 and added that for every column until I arrived at column x.  
+I.e. x = 4 y = 3  
+-> column 1's value at row 3 = 4.  
+-> column 2's value is column 1 (4) + y + 1 (4) = 8  
+-> previous increase was 4 so increase by 1 and add to current cell 8 + 5 = 13  
+-> again 13 + 6 = 19.
 
 ___
 ### Note on given tests
