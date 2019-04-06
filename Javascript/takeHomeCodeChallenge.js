@@ -44,11 +44,11 @@ const answer = (x, y) => {
 
 // given tests:
 
-console.log(answer(2, 2), ' is expected to equal 5', answer(2, 2) === '5');
-console.log(answer(3, 3), ' is expected to equal 13', answer(3, 3) === '13');
-console.log(answer(2, 4), ' is expected to equal 12', answer(2, 4) === '12');
-console.log(answer(4, 1), ' is expected to equal 10', answer(4, 1) === '10');
-console.log(answer(4, 2), ' is expected to equal 14', answer(4, 2) === '14');
-console.log(answer(4, 5), ' is expected to equal 32', answer(4, 5) === '32');
-console.log(answer(5, 3), ' is expected to equal 26', answer(5, 3) === '26');
-console.log(answer(100000, 100000), ' is expected to equal  199980001', answer(100000, 100000) === '19999800001');
+console.log('x = 2, y = 2 is expected to equal 5', answer(2, 2) === '5');
+console.log('x = 3, y = 3 is expected to equal 13', answer(3, 3) === '13');
+console.log('x = 2, y = 4 is expected to equal 12', answer(2, 4) === '12');
+console.log('x = 4, y = 1 is expected to equal 10', answer(4, 1) === '10');
+console.log('x = 4, y = 2 is expected to equal 14', answer(4, 2) === '14');
+console.log('x = 4, y = 5 is expected to equal 32', answer(4, 5) === '32');
+console.log('x = 5, y = 3 is expected to equal 26', answer(5, 3) === '26');
+console.log('x = 100000, y = 100000 is expected to equal 199980001', answer(100000, 100000) === '19999800001');
