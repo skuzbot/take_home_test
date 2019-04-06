@@ -4,10 +4,10 @@ This will ultimately be solved with functional programing via the elixir code la
 I think this problem can be solved mathematically considering the row and column sequences increase with a set pattern.
 
 My first concern will be to calculate what the first column's value is for whichever row we are looking at
-That figure is simple enough to calculate by taking the row index and adding that value minus 1 to the previous value. Dynamic programming 
-will help.
+That figure can be calculated by adding the next row's index minus 1 to the current cell value. 
 
-Iterating into the row will be simple enough. I'll use the same sequence increase but I'll start at my found value + 1.
+Iterating into the row will be done by taking the column 1's value at row y and adding the y index + 1 to get the next column's value. After that
+initial increase value is found we will add one to it and increase again until our target column is found.
 
 Essentially where N is x cord and M is y cord, i will iterate up with an increasing sequence until i reach the value M, then add one and continue.
 
@@ -15,7 +15,7 @@ Output:
 string representing the box id for the given x and y cordinates
 
 Input:
-STDIN 
+STDIN with two values and then a zero to represent input termination
 
 Constrains/Conditions:
 Use recursion over iteration to fultill functional programing paradigm.
