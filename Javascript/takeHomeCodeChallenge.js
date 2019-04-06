@@ -15,7 +15,7 @@ Keep in mind indices are not zero based
 
 // -Start of Code-                                                 ===
 const answer = (x, y) => {
-  // checkout commit dcde044 to see my recursive solution
+  // checkout commit 58be930 to see my recursive solution
   const traverseRows = (curCell, curRow) => {
     while (curRow < y) {
       curRow++;
