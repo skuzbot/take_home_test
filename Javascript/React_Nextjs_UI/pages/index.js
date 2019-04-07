@@ -17,10 +17,10 @@ export default class index extends Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    if (this.state.xInput > 12 || this.state.yInput > 12) {
-      alert('Index selection is limited to 12 or below')
-    } else if (this.state.xInput === '' || this.state.yInput === '') {
+    if (this.state.xInput === '' || this.state.yInput === '') {
       alert('Please select both an x and y index')
+    } else if (this.state.xInput > 8 || this.state.yInput > 8) {
+      alert('Index selection is limited to 8 or below')
     } else {
       this.setState({
         x: this.state.xInput,
@@ -56,7 +56,10 @@ export default class index extends Component {
           <br/>
           y: {this.state.y}
         </div>
-        <BoxStack />
+        <BoxStack 
+          x={this.state.x}
+          y={this.state.y}
+        />
         <style jsx>{`
         
         `}</style>
