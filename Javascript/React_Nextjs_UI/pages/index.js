@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import CoordInput from './components/CoordInput'
+import BoxStack from './components/BoxStack'
 
 export default class index extends Component {
   constructor() {
@@ -55,6 +56,7 @@ export default class index extends Component {
           <br/>
           y: {this.state.y}
         </div>
+        <BoxStack />
         <style jsx>{`
         
         `}</style>

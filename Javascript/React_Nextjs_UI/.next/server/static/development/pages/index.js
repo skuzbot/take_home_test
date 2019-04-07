@@ -1117,6 +1117,223 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
+/***/ "./pages/components/BoxStack.js":
+/*!**************************************!*\
+  !*** ./pages/components/BoxStack.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/stevenduncan/Documents/takeHomeCodeChallenege/Javascript/React_Nextjs_UI/pages/components/BoxStack.js";
+
+
+
+var BoxStack = function BoxStack(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    className: "jsx-2580404386",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'box-grid-container',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'y-index',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "Y:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-12',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "12"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell 1-12',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "67"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-11',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "11"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-1-11',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "56"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-2-11',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "68"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-10',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "10"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-1-10',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "46"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-2-10',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "57"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-3-10',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "69"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-9',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "9"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-1-9',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "37"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-2-9',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "47"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-3-9',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "58"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'cell cell-4-9',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "70"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-8',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "8"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-7',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "7"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-6',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-5',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "5"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-4',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "4"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-3',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "3"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-2',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "2"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + 'row row-index-1',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "1"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2580404386" + " " + "x-index",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "X:")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2580404386",
+    __self: this
+  }, ".box-grid-container.jsx-2580404386{display:inline-grid;border:1px red solid;grid-template-columns:14fr;grid-template-rows:14fr;}.y-index.jsx-2580404386{border:1px blue solid;grid-column-start:1;grid-column-end:2;grid-row-start:1;grid-row-end:14;}.x-index.jsx-2580404386{grid-row-start:14;}.row-index-0.jsx-2580404386{grid-row-start:13;}.cell.jsx-2580404386{border:1px blue dashed;}.row.jsx-2580404386{grid-column-start:2;text-align:right;}.cell-1-12.jsx-2580404386{grid-column-start:3;grid-row-start:1;}.cell-1-11.jsx-2580404386{grid-column-start:3;grid-row-start:2;}.cell-2-11.jsx-2580404386{grid-column-start:4;grid-row-start:2;}.cell-1-10.jsx-2580404386{grid-column-start:3;grid-row-start:3;}.cell-2-10.jsx-2580404386{grid-column-start:4;grid-row-start:3;}.cell-3-10.jsx-2580404386{grid-column-start:5;grid-row-start:3;}.cell-1-9.jsx-2580404386{grid-column-start:3;grid-row-start:4;}.cell-2-9.jsx-2580404386{grid-column-start:4;grid-row-start:4;}.cell-3-9.jsx-2580404386{grid-column-start:5;grid-row-start:4;}.cell-4-9.jsx-2580404386{grid-column-start:6;grid-row-start:4;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zdGV2ZW5kdW5jYW4vRG9jdW1lbnRzL3Rha2VIb21lQ29kZUNoYWxsZW5lZ2UvSmF2YXNjcmlwdC9SZWFjdF9OZXh0anNfVUkvcGFnZXMvY29tcG9uZW50cy9Cb3hTdGFjay5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtQ2tCLEFBRytCLEFBT0UsQUFTSixBQUlBLEFBSUssQUFLSCxBQUtBLEFBS0EsQUFLQSxBQUtBLEFBS0EsQUFLQSxBQUtBLEFBS0EsQUFLQSxBQUtBLGtCQTlEdEIsQUFJQSxFQXBCdUIsQUE2QkosQUFLQSxBQUtBLEFBS0EsQUFLQSxBQUtBLEFBS0EsQUFLQSxBQUtBLEFBS0EsQUFLQSxFQXhFRyxDQWlCdEIsY0FNQSxBQUtBLEFBS0EsQUFLQSxBQUtBLEFBS0EsQUFLQSxBQUtBLEFBS0EsQUFLQSxBQUtBLElBL0U2QixDQU9ULGtCQUNELFFBUE8sU0FRUixlQVBsQixDQVNBIiwiZmlsZSI6Ii9Vc2Vycy9zdGV2ZW5kdW5jYW4vRG9jdW1lbnRzL3Rha2VIb21lQ29kZUNoYWxsZW5lZ2UvSmF2YXNjcmlwdC9SZWFjdF9OZXh0anNfVUkvcGFnZXMvY29tcG9uZW50cy9Cb3hTdGFjay5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IEJveFN0YWNrID0gKHByb3BzKSA9PiB7XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPGJyLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPSdib3gtZ3JpZC1jb250YWluZXInPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0neS1pbmRleCc+XG4gICAgICAgICAgWTpcbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPSdyb3cgcm93LWluZGV4LTEyJz4xMjwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSdjZWxsIDEtMTInPjY3PC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPSdyb3cgcm93LWluZGV4LTExJz4xMTwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSdjZWxsIGNlbGwtMS0xMSc+NTY8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nY2VsbCBjZWxsLTItMTEnPjY4PC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPSdyb3cgcm93LWluZGV4LTEwJz4xMDwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSdjZWxsIGNlbGwtMS0xMCc+NDY8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nY2VsbCBjZWxsLTItMTAnPjU3PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NlbGwgY2VsbC0zLTEwJz42OTwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ncm93IHJvdy1pbmRleC05Jz45PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NlbGwgY2VsbC0xLTknPjM3PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NlbGwgY2VsbC0yLTknPjQ3PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NlbGwgY2VsbC0zLTknPjU4PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NlbGwgY2VsbC00LTknPjcwPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPSdyb3cgcm93LWluZGV4LTgnPjg8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J3JvdyByb3ctaW5kZXgtNyc+NzwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ncm93IHJvdy1pbmRleC02Jz42PC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPSdyb3cgcm93LWluZGV4LTUnPjU8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J3JvdyByb3ctaW5kZXgtNCc+NDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ncm93IHJvdy1pbmRleC0zJz4zPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPSdyb3cgcm93LWluZGV4LTInPjI8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J3JvdyByb3ctaW5kZXgtMSc+MTwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIngtaW5kZXhcIj5cbiAgICAgICAgICBYOlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAuYm94LWdyaWQtY29udGFpbmVyIHtcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtZ3JpZDtcbiAgICAgICAgICBib3JkZXI6IDFweCByZWQgc29saWQ7XG4gICAgICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxNGZyO1xuICAgICAgICAgIGdyaWQtdGVtcGxhdGUtcm93czogMTRmcjtcbiAgICAgICAgfVxuXG4gICAgICAgIC55LWluZGV4IHtcbiAgICAgICAgICBib3JkZXI6IDFweCBibHVlIHNvbGlkO1xuICAgICAgICAgIGdyaWQtY29sdW1uLXN0YXJ0OiAxO1xuICAgICAgICAgIGdyaWQtY29sdW1uLWVuZDogMjtcbiAgICAgICAgICBncmlkLXJvdy1zdGFydDogMTtcbiAgICAgICAgICBncmlkLXJvdy1lbmQ6IDE0O1xuXG4gICAgICAgIH1cblxuICAgICAgICAueC1pbmRleCB7XG4gICAgICAgICAgZ3JpZC1yb3ctc3RhcnQ6IDE0O1xuICAgICAgICB9XG5cbiAgICAgICAgLnJvdy1pbmRleC0wIHtcbiAgICAgICAgICBncmlkLXJvdy1zdGFydDogMTM7XG4gICAgICAgIH1cblxuICAgICAgICAuY2VsbCB7XG4gICAgICAgICAgYm9yZGVyOiAxcHggYmx1ZSBkYXNoZWQ7IFxuICAgICAgICB9XG5cblxuICAgICAgICAucm93IHtcbiAgICAgICAgICBncmlkLWNvbHVtbi1zdGFydDogMjtcbiAgICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLmNlbGwtMS0xMiB7XG4gICAgICAgICAgZ3JpZC1jb2x1bW4tc3RhcnQ6IDM7XG4gICAgICAgICAgZ3JpZC1yb3ctc3RhcnQ6IDE7XG4gICAgICAgIH1cblxuICAgICAgICAuY2VsbC0xLTExIHtcbiAgICAgICAgICBncmlkLWNvbHVtbi1zdGFydDogMztcbiAgICAgICAgICBncmlkLXJvdy1zdGFydDogMjtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLmNlbGwtMi0xMSB7XG4gICAgICAgICAgZ3JpZC1jb2x1bW4tc3RhcnQ6IDQ7XG4gICAgICAgICAgZ3JpZC1yb3ctc3RhcnQ6IDI7XG4gICAgICAgIH1cblxuICAgICAgICAuY2VsbC0xLTEwIHtcbiAgICAgICAgICBncmlkLWNvbHVtbi1zdGFydDogMztcbiAgICAgICAgICBncmlkLXJvdy1zdGFydDogMztcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLmNlbGwtMi0xMCB7XG4gICAgICAgICAgZ3JpZC1jb2x1bW4tc3RhcnQ6IDQ7XG4gICAgICAgICAgZ3JpZC1yb3ctc3RhcnQ6IDM7XG4gICAgICAgIH1cbiAgICAgICAgXG4gICAgICAgIC5jZWxsLTMtMTAge1xuICAgICAgICAgIGdyaWQtY29sdW1uLXN0YXJ0OiA1O1xuICAgICAgICAgIGdyaWQtcm93LXN0YXJ0OiAzO1xuICAgICAgICB9XG5cbiAgICAgICAgLmNlbGwtMS05IHtcbiAgICAgICAgICBncmlkLWNvbHVtbi1zdGFydDogMztcbiAgICAgICAgICBncmlkLXJvdy1zdGFydDogNDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5jZWxsLTItOSB7XG4gICAgICAgICAgZ3JpZC1jb2x1bW4tc3RhcnQ6IDQ7XG4gICAgICAgICAgZ3JpZC1yb3ctc3RhcnQ6IDQ7XG4gICAgICAgIH1cblxuICAgICAgICAuY2VsbC0zLTkge1xuICAgICAgICAgIGdyaWQtY29sdW1uLXN0YXJ0OiA1O1xuICAgICAgICAgIGdyaWQtcm93LXN0YXJ0OiA0O1xuICAgICAgICB9XG5cbiAgICAgICAgLmNlbGwtNC05IHtcbiAgICAgICAgICBncmlkLWNvbHVtbi1zdGFydDogNjtcbiAgICAgICAgICBncmlkLXJvdy1zdGFydDogNDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IEJveFN0YWNrIl19 */\n/*@ sourceURL=/Users/stevenduncan/Documents/takeHomeCodeChallenege/Javascript/React_Nextjs_UI/pages/components/BoxStack.js */"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BoxStack);
+
+/***/ }),
+
 /***/ "./pages/components/CoordInput.js":
 /*!****************************************!*\
   !*** ./pages/components/CoordInput.js ***!
@@ -1217,6 +1434,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_CoordInput__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/CoordInput */ "./pages/components/CoordInput.js");
+/* harmony import */ var _components_BoxStack__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/BoxStack */ "./pages/components/BoxStack.js");
 
 
 
@@ -1224,6 +1442,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/stevenduncan/Documents/takeHomeCodeChallenege/Javascript/React_Nextjs_UI/pages/index.js";
+
 
 
 
@@ -1286,7 +1505,7 @@ function (_Component) {
         className: "jsx-3033268396",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_CoordInput__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -1296,27 +1515,33 @@ function (_Component) {
         handleInputChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "jsx-3033268396",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       }, "x: ", this.state.x, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
         className: "jsx-3033268396",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
-      }), "y: ", this.state.y), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }), "y: ", this.state.y), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_BoxStack__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_6___default.a, {
         id: "3033268396",
         __self: this
-      }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zdGV2ZW5kdW5jYW4vRG9jdW1lbnRzL3Rha2VIb21lQ29kZUNoYWxsZW5lZ2UvSmF2YXNjcmlwdC9SZWFjdF9OZXh0anNfVUkvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeURvQiIsImZpbGUiOiIvVXNlcnMvc3RldmVuZHVuY2FuL0RvY3VtZW50cy90YWtlSG9tZUNvZGVDaGFsbGVuZWdlL0phdmFzY3JpcHQvUmVhY3RfTmV4dGpzX1VJL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IENvb3JkSW5wdXQgZnJvbSAnLi9jb21wb25lbnRzL0Nvb3JkSW5wdXQnXG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGluZGV4IGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgY29uc3RydWN0b3IoKSB7XG4gICAgc3VwZXIoKVxuICAgIHRoaXMuc3RhdGUgPSB7XG4gICAgICB4SW5wdXQ6ICcnLFxuICAgICAgeUlucHV0OiAnJyxcbiAgICAgIHg6ICcnLFxuICAgICAgeTogJycsXG4gICAgfVxuICAgIHRoaXMuaGFuZGxlRm9ybVN1Ym1pdCA9IHRoaXMuaGFuZGxlRm9ybVN1Ym1pdC5iaW5kKHRoaXMpO1xuICAgIHRoaXMuaGFuZGxlSW5wdXRDaGFuZ2UgPSB0aGlzLmhhbmRsZUlucHV0Q2hhbmdlLmJpbmQodGhpcyk7XG4gIH1cblxuICBoYW5kbGVGb3JtU3VibWl0KGUpIHtcbiAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgaWYgKHRoaXMuc3RhdGUueElucHV0ID4gMTIgfHwgdGhpcy5zdGF0ZS55SW5wdXQgPiAxMikge1xuICAgICAgYWxlcnQoJ0luZGV4IHNlbGVjdGlvbiBpcyBsaW1pdGVkIHRvIDEyIG9yIGJlbG93JylcbiAgICB9IGVsc2UgaWYgKHRoaXMuc3RhdGUueElucHV0ID09PSAnJyB8fCB0aGlzLnN0YXRlLnlJbnB1dCA9PT0gJycpIHtcbiAgICAgIGFsZXJ0KCdQbGVhc2Ugc2VsZWN0IGJvdGggYW4geCBhbmQgeSBpbmRleCcpXG4gICAgfSBlbHNlIHtcbiAgICAgIHRoaXMuc2V0U3RhdGUoe1xuICAgICAgICB4OiB0aGlzLnN0YXRlLnhJbnB1dCxcbiAgICAgICAgeTogdGhpcy5zdGF0ZS55SW5wdXQsXG4gICAgICB9KVxuICAgIH1cbiAgfVxuXG4gIGhhbmRsZUlucHV0Q2hhbmdlKGUpIHtcbiAgICBlLnByZXZlbnREZWZhdWx0KGUpO1xuICAgIGNvbnN0IGluZGV4ID0gZS50YXJnZXQubmFtZTtcbiAgICBjb25zdCB2YWx1ZSA9IGUudGFyZ2V0LnZhbHVlLnJlcGxhY2UoL1teMC05XS8sICcnKTtcbiAgICBpbmRleCA9PT0gJ3gnID9cbiAgICB0aGlzLnNldFN0YXRlKHtcbiAgICAgIHhJbnB1dDogdmFsdWUsXG4gICAgfSlcbiAgICA6IHRoaXMuc2V0U3RhdGUoe1xuICAgICAgeUlucHV0OiB2YWx1ZSxcbiAgICB9KVxuICB9XG5cbiAgcmVuZGVyKCkge1xuICAgIHJldHVybiAoXG4gICAgICA8ZGl2PlxuICAgICAgICA8Q29vcmRJbnB1dCBcbiAgICAgICAgICB4PXt0aGlzLnN0YXRlLnhJbnB1dH1cbiAgICAgICAgICB5PXt0aGlzLnN0YXRlLnlJbnB1dH1cbiAgICAgICAgICBoYW5kbGVGb3JtU3VibWl0PXt0aGlzLmhhbmRsZUZvcm1TdWJtaXR9XG4gICAgICAgICAgaGFuZGxlSW5wdXRDaGFuZ2U9e3RoaXMuaGFuZGxlSW5wdXRDaGFuZ2V9XG4gICAgICAgIC8+XG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgeDoge3RoaXMuc3RhdGUueH1cbiAgICAgICAgICA8YnIvPlxuICAgICAgICAgIHk6IHt0aGlzLnN0YXRlLnl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIFxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn0iXX0= */\n/*@ sourceURL=/Users/stevenduncan/Documents/takeHomeCodeChallenege/Javascript/React_Nextjs_UI/pages/index.js */"));
+      }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zdGV2ZW5kdW5jYW4vRG9jdW1lbnRzL3Rha2VIb21lQ29kZUNoYWxsZW5lZ2UvSmF2YXNjcmlwdC9SZWFjdF9OZXh0anNfVUkvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBMkRvQiIsImZpbGUiOiIvVXNlcnMvc3RldmVuZHVuY2FuL0RvY3VtZW50cy90YWtlSG9tZUNvZGVDaGFsbGVuZWdlL0phdmFzY3JpcHQvUmVhY3RfTmV4dGpzX1VJL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IENvb3JkSW5wdXQgZnJvbSAnLi9jb21wb25lbnRzL0Nvb3JkSW5wdXQnXG5pbXBvcnQgQm94U3RhY2sgZnJvbSAnLi9jb21wb25lbnRzL0JveFN0YWNrJ1xuXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBpbmRleCBleHRlbmRzIENvbXBvbmVudCB7XG4gIGNvbnN0cnVjdG9yKCkge1xuICAgIHN1cGVyKClcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgeElucHV0OiAnJyxcbiAgICAgIHlJbnB1dDogJycsXG4gICAgICB4OiAnJyxcbiAgICAgIHk6ICcnLFxuICAgIH1cbiAgICB0aGlzLmhhbmRsZUZvcm1TdWJtaXQgPSB0aGlzLmhhbmRsZUZvcm1TdWJtaXQuYmluZCh0aGlzKTtcbiAgICB0aGlzLmhhbmRsZUlucHV0Q2hhbmdlID0gdGhpcy5oYW5kbGVJbnB1dENoYW5nZS5iaW5kKHRoaXMpO1xuICB9XG5cbiAgaGFuZGxlRm9ybVN1Ym1pdChlKSB7XG4gICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xuICAgIGlmICh0aGlzLnN0YXRlLnhJbnB1dCA+IDEyIHx8IHRoaXMuc3RhdGUueUlucHV0ID4gMTIpIHtcbiAgICAgIGFsZXJ0KCdJbmRleCBzZWxlY3Rpb24gaXMgbGltaXRlZCB0byAxMiBvciBiZWxvdycpXG4gICAgfSBlbHNlIGlmICh0aGlzLnN0YXRlLnhJbnB1dCA9PT0gJycgfHwgdGhpcy5zdGF0ZS55SW5wdXQgPT09ICcnKSB7XG4gICAgICBhbGVydCgnUGxlYXNlIHNlbGVjdCBib3RoIGFuIHggYW5kIHkgaW5kZXgnKVxuICAgIH0gZWxzZSB7XG4gICAgICB0aGlzLnNldFN0YXRlKHtcbiAgICAgICAgeDogdGhpcy5zdGF0ZS54SW5wdXQsXG4gICAgICAgIHk6IHRoaXMuc3RhdGUueUlucHV0LFxuICAgICAgfSlcbiAgICB9XG4gIH1cblxuICBoYW5kbGVJbnB1dENoYW5nZShlKSB7XG4gICAgZS5wcmV2ZW50RGVmYXVsdChlKTtcbiAgICBjb25zdCBpbmRleCA9IGUudGFyZ2V0Lm5hbWU7XG4gICAgY29uc3QgdmFsdWUgPSBlLnRhcmdldC52YWx1ZS5yZXBsYWNlKC9bXjAtOV0vLCAnJyk7XG4gICAgaW5kZXggPT09ICd4JyA/XG4gICAgdGhpcy5zZXRTdGF0ZSh7XG4gICAgICB4SW5wdXQ6IHZhbHVlLFxuICAgIH0pXG4gICAgOiB0aGlzLnNldFN0YXRlKHtcbiAgICAgIHlJbnB1dDogdmFsdWUsXG4gICAgfSlcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPENvb3JkSW5wdXQgXG4gICAgICAgICAgeD17dGhpcy5zdGF0ZS54SW5wdXR9XG4gICAgICAgICAgeT17dGhpcy5zdGF0ZS55SW5wdXR9XG4gICAgICAgICAgaGFuZGxlRm9ybVN1Ym1pdD17dGhpcy5oYW5kbGVGb3JtU3VibWl0fVxuICAgICAgICAgIGhhbmRsZUlucHV0Q2hhbmdlPXt0aGlzLmhhbmRsZUlucHV0Q2hhbmdlfVxuICAgICAgICAvPlxuICAgICAgICA8ZGl2PlxuICAgICAgICAgIHg6IHt0aGlzLnN0YXRlLnh9XG4gICAgICAgICAgPGJyLz5cbiAgICAgICAgICB5OiB7dGhpcy5zdGF0ZS55fVxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPEJveFN0YWNrIC8+XG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgXG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDwvZGl2PlxuICAgIClcbiAgfVxufSJdfQ== */\n/*@ sourceURL=/Users/stevenduncan/Documents/takeHomeCodeChallenege/Javascript/React_Nextjs_UI/pages/index.js */"));
     }
   }]);
 
