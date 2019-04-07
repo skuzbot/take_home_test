@@ -9,7 +9,7 @@ ___
 ### Approach
 
 This algorithm will ultimately be solved with functional programing via the elixir code language so I approached this problem with that mindset.
-I decided this problem can be quickly solved mathematically considering the row and column sequences increase with a set pattern.
+I decided this problem can be quickly solved mathematically considering the row and column sequences increase with a set pattern as opposed to building out an x by y matrix then iterating to the correct index.
 
 My first concern was be to calculate what the first column's value is for whichever row we are looking at
 That figure can be calculated by adding the next row's index minus 1 to the current cell value. 
