@@ -8,11 +8,12 @@ export default class BoxStack extends Component {
       curRow: 1,
       curCol: 1,
       targetCellValue: '',
-      targetCellCoord: 'c1-1',
+      targetClassName: 'c1-1',
       targetSearched: false,
       initialMessage: true,
       currentCellValue: 1,
       currentIncrease: 1,
+      currentClassName: 'c1-1',
       currentX: 1,
       currentY: 1,
       rowFound: false,
@@ -23,8 +24,14 @@ export default class BoxStack extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.coordsSelected !== this.props.coordsSelected) {
       const targetCellValue = this.findTargetCell()
+      const targetClassName = `c${this.props.x}-${this.props.y}`
       this.setState({
-        targetCellValue: targetCellValue
+        targetCellValue: targetCellValue,
+        targetClassName: targetClassName
+      }, () => {
+        const targetDiv = document.getElementsByClassName(targetClassName);
+        const prevClassName = targetDiv[0].className;
+        targetDiv[0].className = `${prevClassName} target-cell`
       })
     }
   }
@@ -34,6 +41,18 @@ export default class BoxStack extends Component {
       const targetCellValue = document.getElementsByClassName(`c${this.props.x}-${this.props.y}`)[0].innerHTML;
       return targetCellValue;
     }
+  }
+
+  updateCurrentCellClassName() {
+    const currentCellDiv = document.getElementsByClassName('current-cell');
+    const basicClassName = currentCellDiv[0].className.replace('current-cell', 'cell');
+    console.log('basicClassName :', basicClassName);
+    console.log('currentCellDiv :', currentCellDiv);
+    currentCellDiv[0].className = basicClassName;
+    const nextCellDiv = document.getElementsByClassName(`c${this.state.currentX}-${this.state.currentY}`)
+    console.log('nextCellDiv :', nextCellDiv);
+    const currentClassName = nextCellDiv[0].className.replace('cell', 'current-cell')
+    nextCellDiv[0].className = currentClassName;
   }
 
   triggerNextStep() {
@@ -46,6 +65,8 @@ export default class BoxStack extends Component {
           currentIncrease: this.state.currentIncrease + 1,
           currentCellValue: nextCellValue,
           initialMessage: false,
+        }, () => {
+          this.updateCurrentCellClassName()
         })
       } else if (this.state.rowFound === false) {
         console.log('this.state.y :', this.props.y);
@@ -54,6 +75,8 @@ export default class BoxStack extends Component {
         this.setState({
           rowFound: true,
           currentIncrease: nextIncrease,
+        }, () => {
+          this.updateCurrentCellClassName()
         })
       } else if (this.state.currentCellValue != this.state.targetCellValue) {
         const nextCellValue = this.state.currentCellValue + this.state.currentIncrease;
@@ -62,6 +85,7 @@ export default class BoxStack extends Component {
           currentIncrease: this.state.currentIncrease + 1,
           currentCellValue: nextCellValue,
         }, () => {
+          this.updateCurrentCellClassName()
           if (this.state.currentCellValue == this.state.targetCellValue) {
             this.setState({
               targetFound: true,
@@ -122,7 +146,7 @@ export default class BoxStack extends Component {
             <div className='c7-2 cell'>35</div>
           </div>
           <div className='row-1-container row'>
-            <div className='c1-1 cell' name='c1-1'>1</div>
+            <div className='c1-1 current-cell' name='c1-1'>1</div>
             <div className='c2-1 cell' name='c2-1'>3</div>
             <div className='c3-1 cell' name='c3-1'>6</div>
             <div className='c4-1 cell' name='c4-1'>10</div>
@@ -190,7 +214,21 @@ export default class BoxStack extends Component {
           }
 
           .target-cell {
+            margin: 5px;
+            padding: 4px;
             border: 1px red solid;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+          }
+          
+          .current-cell {
+            margin: 5px;
+            padding: 4px;
+            border: 1px orange solid;
+            width: 20px;
+            height: 20px;
+            text-align: center;
           }
         `}</style>
       </div>

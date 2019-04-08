@@ -1,7 +1,5 @@
 const Message = (props) => {
 
-  console.log('props :', props);
-
   if (props.x && props.y && props.targetCellValue) {
     return (
       <div>
