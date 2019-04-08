@@ -12,7 +12,7 @@ ___
 This algorithm will ultimately be solved with functional programing via the elixir code language so I approached this problem with that mindset.
 I decided this problem can be quickly solved mathematically considering the row and column sequences increase with a set pattern as opposed to building out an x by y matrix then iterating to the correct index.
 
-My first concern was be to calculate what the first column's value is for whichever row we are looking at
+My first concern was be to calculate what the first column's value is for whichever row we are looking at.
 That figure can be calculated by adding the next row's index minus 1 to the current cell value. 
 
 Iterating into the row was be done by taking the column 1's value at row y and adding the y index + 1 to get the next column's value. After that I took the previous increase + 1 and added that for every column until I arrived at column x.  
@@ -21,6 +21,8 @@ I.e. x = 4 y = 3
 -> column 2's value is column 1 (4) + y + 1 (4) = 8  
 -> previous increase was 4 so increase by 1 and add to current cell 8 + 5 = 13  
 -> again 13 + 6 = 19.
+
+If none of that made sense make sure to spin up the React walkthrough. 
 
 ___
 ### Note on given tests
