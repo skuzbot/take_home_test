@@ -23,6 +23,8 @@ export default class index extends Component {
       alert('Please select both an x and y index')
     } else if (this.state.xInput > 8 || this.state.yInput > 8) {
       alert('Index selection is limited to 8 or below')
+    } else if (this.state.xInput + this.state.yInput > 9) {
+      alert('That index is outside the bounds of the box stack')
     } else {
       this.setState({
         x: this.state.xInput,
@@ -35,7 +37,10 @@ export default class index extends Component {
   handleInputChange(e) {
     e.preventDefault(e);
     const index = e.target.name;
-    const value = e.target.value.replace(/[^0-9]/, '');
+    let value = e.target.value.replace(/[^0-9]/, '');
+    if (value !== '') {
+      value = parseInt(value);
+    }
     index === 'x' ?
     this.setState({
       xInput: value,

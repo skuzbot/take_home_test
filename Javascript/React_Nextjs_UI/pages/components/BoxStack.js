@@ -10,14 +10,19 @@ export default class BoxStack extends Component {
       targetCellValue: '',
       targetCellCoord: 'c1-1',
       targetSearched: false,
+      initialMessage: true,
+      currentCellValue: 1,
+      currentIncrease: 1,
+      currentX: 1,
+      currentY: 1,
+      rowFound: false,
+      targetFound: false,
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('this.props.x :', this.props.x);
     if (nextProps.coordsSelected !== this.props.coordsSelected) {
       const targetCellValue = this.findTargetCell()
-      console.log('targetCellValue :', targetCellValue);
       this.setState({
         targetCellValue: targetCellValue
       })
@@ -25,10 +30,43 @@ export default class BoxStack extends Component {
   }
 
   findTargetCell() {
-    console.log('findTargetCell called')
     if (this.props.x !== '' && this.props.y !== '') {
       const targetCellValue = document.getElementsByClassName(`c${this.props.x}-${this.props.y}`)[0].innerHTML;
       return targetCellValue;
+    }
+  }
+
+  triggerNextStep() {
+    if (this.state.targetFound === false) {
+      if (this.state.currentY < this.props.y) {
+        const nextIncrease = this.state.currentY;
+        const nextCellValue = this.state.currentCellValue + nextIncrease;
+        this.setState({
+          currentY: this.state.currentY + 1,
+          currentIncrease: this.state.currentIncrease + 1,
+          currentCellValue: nextCellValue,
+          initialMessage: false,
+        })
+      } else if (this.state.rowFound === false) {
+        console.log('this.state.y :', this.props.y);
+        const nextIncrease = this.props.y + 1
+        console.log('nextIncrease :', nextIncrease);
+        this.setState({
+          rowFound: true,
+          currentIncrease: nextIncrease,
+        })
+      } else if (this.state.currentCellValue != this.state.targetCellValue) {
+        const nextCellValue = this.state.currentCellValue + this.state.currentIncrease;
+        this.setState({
+          currentX: this.state.currentX + 1,
+          currentIncrease: this.state.currentIncrease + 1,
+          currentCellValue: nextCellValue,
+        })
+      } else {
+        this.setState({
+          targetFound: true,
+        })
+      }
     }
   }
 
@@ -89,12 +127,24 @@ export default class BoxStack extends Component {
             <div className='c7-1 cell' name='c7-1'>28</div>
             <div className='c8-1 cell' name='c8-1'>36</div>
           </div>
+          <button
+            onClick={!this.state.targetFound ? () => this.triggerNextStep()
+            : null}>
+            {!this.state.targetFound ? 'Next Step' : 'Steps Complete'}
+          </button>
         </div>
         <div className='message-container'>
           <Message 
             x={this.props.x}
             y={this.props.y}
             targetCellValue={this.state.targetCellValue}
+            initialMessage={this.state.initialMessage}
+            currentCellValue={this.state.currentCellValue}
+            currentIncrease={this.state.currentIncrease}
+            currentX={this.state.currentX}
+            currentY={this.state.currentY}
+            rowFound={this.state.rowFound}
+            targetFound={this.state.targetFound}
           />
         </div>
         <style jsx>{`
