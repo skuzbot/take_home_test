@@ -46,11 +46,8 @@ export default class BoxStack extends Component {
   updateCurrentCellClassName() {
     const currentCellDiv = document.getElementsByClassName('current-cell');
     const basicClassName = currentCellDiv[0].className.replace('current-cell', 'cell');
-    console.log('basicClassName :', basicClassName);
-    console.log('currentCellDiv :', currentCellDiv);
     currentCellDiv[0].className = basicClassName;
     const nextCellDiv = document.getElementsByClassName(`c${this.state.currentX}-${this.state.currentY}`)
-    console.log('nextCellDiv :', nextCellDiv);
     const currentClassName = nextCellDiv[0].className.replace('cell', 'current-cell')
     nextCellDiv[0].className = currentClassName;
   }
@@ -69,9 +66,7 @@ export default class BoxStack extends Component {
           this.updateCurrentCellClassName()
         })
       } else if (this.state.rowFound === false) {
-        console.log('this.state.y :', this.props.y);
         const nextIncrease = this.props.y + 1
-        console.log('nextIncrease :', nextIncrease);
         this.setState({
           rowFound: true,
           currentIncrease: nextIncrease,
@@ -92,8 +87,6 @@ export default class BoxStack extends Component {
             })
           }
         })
-      } else {
-        
       }
     }
   }
@@ -181,7 +174,7 @@ export default class BoxStack extends Component {
             align-items: center;
             justify-content: center;
             width: 100vw;
-            border: 1px red solid;
+            padding: 30px;
           }
   
           .box-stack-container {
@@ -189,13 +182,13 @@ export default class BoxStack extends Component {
             padding: 20px;
             flex-direction: column;
             justify-content: center;
-            border: 1px solid black;
             height: 400px;
+            background-color: #E1E9F2;
           }
 
           .message-container {
-            width: 40vw;
-            border: 1px green solid;
+            width: 50vw;
+            background-color: #A4A7AB;
           }
   
           .row {
@@ -207,7 +200,7 @@ export default class BoxStack extends Component {
           .cell {
             margin: 5px;
             padding: 4px;
-            border: 1px blue dashed;
+            border: 1px #84949C dashed;
             width: 20px;
             height: 20px;
             text-align: center;
@@ -215,8 +208,8 @@ export default class BoxStack extends Component {
 
           .target-cell {
             margin: 5px;
-            padding: 4px;
-            border: 1px red solid;
+            padding: 3px;
+            border: 2px #E38FA8 solid;
             width: 20px;
             height: 20px;
             text-align: center;
@@ -224,8 +217,8 @@ export default class BoxStack extends Component {
           
           .current-cell {
             margin: 5px;
-            padding: 4px;
-            border: 1px orange solid;
+            padding: 3px;
+            border: 2px #DBB193 solid;
             width: 20px;
             height: 20px;
             text-align: center;

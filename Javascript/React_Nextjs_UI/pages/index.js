@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import CoordInput from './components/CoordInput'
 import BoxStack from './components/BoxStack'
+import Meta from './components/Meta'
 
 export default class index extends Component {
   constructor() {
@@ -53,24 +54,23 @@ export default class index extends Component {
   render() {
     return (
       <div>
+        <Meta />
+        <BoxStack 
+          x={this.state.xInput}
+          y={this.state.yInput}
+          coordsSelected={this.state.coordsSelected}
+        />
+        { !this.state.coordsSelected ?
         <CoordInput 
           x={this.state.xInput}
           y={this.state.yInput}
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        {/* <div>
-          x: {this.state.x}
-          <br/>
-          y: {this.state.y}
-        </div> */}
-        <BoxStack 
-          x={this.state.xInput}
-          y={this.state.yInput}
-          coordsSelected={this.state.coordsSelected}
-        />
+        : null
+        }
         <style jsx>{`
-        
+         
         `}</style>
       </div>
     )
