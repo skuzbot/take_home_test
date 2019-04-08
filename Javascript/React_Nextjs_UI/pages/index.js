@@ -10,6 +10,8 @@ export default class index extends Component {
       yInput: '',
       x: '',
       y: '',
+      coordsSelected: false,
+      targetCellValue: '',
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -25,6 +27,7 @@ export default class index extends Component {
       this.setState({
         x: this.state.xInput,
         y: this.state.yInput,
+        coordsSelected: true,
       })
     }
   }
@@ -51,14 +54,15 @@ export default class index extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        <div>
+        {/* <div>
           x: {this.state.x}
           <br/>
           y: {this.state.y}
-        </div>
+        </div> */}
         <BoxStack 
-          x={this.state.x}
-          y={this.state.y}
+          x={this.state.xInput}
+          y={this.state.yInput}
+          coordsSelected={this.state.coordsSelected}
         />
         <style jsx>{`
         
