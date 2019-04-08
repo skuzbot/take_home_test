@@ -16,7 +16,8 @@ const Message = (props) => {
         <br/>
         <div className='message-wrapper'>
           <div className='message'>{
-            props.targetCellValue == props.currentCellValue ? `Target Found! Current Box Id ${props.currentCellValue} = Target Box Id ${props.targetCellValue}`
+            props.targetCellValue == props.currentCellValue ? <div className='final-message'><p>Target Found! Current Box Id {props.currentCellValue} = Target Box Id {props.targetCellValue}</p>
+            <p>If you want to see a little more of this sort of thing check out the <a href="https://stevenduncan-portfolio.now.sh/algorithms">algorithm section of my website</a></p><p>It's something I fiddle with in my spare time so keep in mind it's an unfinished project</p></div>
             : props.y === 1 && props.currentY === 1 ? `Since we're starting on row 1 we simply add current box id + current column index + 1 to find our next box id`
             : props.initialMessage ? `We\'ll start at box id ${props.currentCellValue} and calculate the next box id by adding our current box id and next y index - 1`
             : props.y != props.currentY ? `Next we'll iterate up the column until we find our target row`
@@ -54,6 +55,12 @@ const Message = (props) => {
           }
 
           .message {
+            text-align: center;
+          }
+
+          .final-message {
+            margin: 0px auto;
+            width: 80%;
             text-align: center;
           }
           
