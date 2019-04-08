@@ -5,6 +5,8 @@ I first solved this algorithm in Javascript with minimal manual testing. That fi
 
 Next I refactored my logic to Elixir and wrote tests reflecting the initial problem prompt. The answer function is in `Elixir/lib/takehome.ex`  
 To run the tests use `mix test` from the Elixir directory.
+
+Finally I put together a little demonstration of my React skills by building an interactive walkthrough of how I solved this algorithm. The Javascript README will walk you through how to get that up and running.
 ___
 ### Approach
 
