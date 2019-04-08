@@ -61,11 +61,15 @@ export default class BoxStack extends Component {
           currentX: this.state.currentX + 1,
           currentIncrease: this.state.currentIncrease + 1,
           currentCellValue: nextCellValue,
+        }, () => {
+          if (this.state.currentCellValue == this.state.targetCellValue) {
+            this.setState({
+              targetFound: true,
+            })
+          }
         })
       } else {
-        this.setState({
-          targetFound: true,
-        })
+        
       }
     }
   }
